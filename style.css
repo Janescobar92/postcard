@@ -1,42 +1,44 @@
 body{
     background-color: black; font-size:20px; font-family: 'Gochi Hand', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
+
 .postcard{
-    background:white; width: 500px; height: 350px;
-     margin: auto; position: absolute; top: 50%; 
-     left: 50%; transform: translate(-50%,-50%);
-     padding: 15px;
+    background-color: rgb(252, 252, 252);
+    width: 30vw;
+    height: 35vh;
+    padding: 1rem;
 }
-.postcard-header{overflow: hidden;}
-.postcard-header img{
-    max-width: 80px;
-    float: right;
-}
-.postcard-body{
-    overflow: hidden; 
-}
-input{
-    font-size:18px
-}
-.postcard h1 {
-    margin: 0;
-}
+
+.postcard-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-image-container img{
+       width: 5rem;
+       margin-right: 1rem;
+    }
+    .header-text-container h1{
+       margin-left: 1rem;
+    }
+    .postcard-body{
+        display: flex;
+        /* justify-content: ; */
+    }
 .left-part{
-    float: left; width: 50%;
+    margin-left: 1rem;
 }
 .rigth-part{
-    float: right; width: 50%; padding-top: 4%;
-}
-.rigth-part input{
-    display: block; border: none; border-bottom: 1px solid rgb(58, 58, 58);font-family: 'Gochi Hand', cursive;
+    margin-right: 1rem;
 }
 .postcard-footer{
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-.postcard-footer input[type=submit]{
-  padding: 10px; text-align: center; border: none; border-bottom: 1px solid grey; background: #c2c0c0;font-family: 'Gochi Hand', cursive; width: 250px; margin-bottom: 10px;
-}
-h1{
-    font-size: 60px;
-}
+
 
